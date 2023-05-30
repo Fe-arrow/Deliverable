@@ -20,6 +20,7 @@ class CreateItemsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('frequency');
+            $table->string('name');
             $table->string('img_path');
             $table->string('quantity');
             $table->string('expiry_date');
